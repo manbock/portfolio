@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0; font-size: 14px;}
+/* font-size: 16px; 기본값 */
+
+.clearfix::after{content: ""; clear: both; display: block;}
+
+/* reset */
+li{list-style: none; /* 블릿문자 삭제 */}
+a{color: #333; text-decoration: none; /* 밑줄삭제 */ }
+
+/* wrap */
+#wrap{ width: 1000px; margin: 0 auto;}
+
+
+/* header */
+#header{}
+#header h1{float: left; width: 120px;}
+#header h1 a img{width: 100%;}
+
+#header .nav{float: right; 
+    text-align: center; /* 자식요소중 인라인요소를 가운데 정렬 */
+    margin-top: 20px;
+}
+#header .nav ul{}
+#header .nav ul li{float: left; width: 120px;
+position: relative;}
+#header .nav ul li a{ /* 인라인요소 */
+    background-color: #ccc; display: block;
+    padding: 20px 15px;
+    transition: 0.3s;   /* = 300ms */
+}
+#header .nav ul li a:hover{ background-color: #ddd;}
+
+#header .nav ul li .submenu{
+    display: none; /* 영역을 완전히 사라지게함 */
+    position: absolute; 
+    top: 60px; left: 0;
+    z-index: 10;
+}
+
+/* banner */
+#banner{height: 378px; overflow: hidden;}
+#banner .slideList{}
+#banner .slideList .slideImg{
+    position: relative;
+}
+#banner .slideList .slideImg h2{
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0,0,0,0.5); /* rgba를 이용하면 a(알파값에 투명도를 줄 수 있다.) */
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: #fff;
+}
+#banner .slideList .slideImg img{
+    /* 
+    img, button태그는 인라인요소인데 넓이를 인식한다. 
+    img태그의 특징: 인라인요소라서 예측하지 못하는 공간을 가지고 있음
+    해결방법 2가지
+    1.display:block;
+    2.vertical-align;
+    */
+    vertical-align: top;
+    width: 100%;}
