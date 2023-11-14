@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> <!-- 스와이퍼 -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
+   <!-- 폰트어썸 -->
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <div class="singleProduct">
+      <header>
+         <a href="index.html">
+            <img src="images/menu_Icon_left.svg" alt="menu_Icon_left" class="menu_Icon_left">
+         </a>
+         <h2>Shop Product</h2>
+         <img src="images/menu_Icon_right.svg" alt="menu_Icon_right" class="menu_Icon_right">
+      </header> <!-- /header -->
+
+      <main>
+         <h2>Modern T-shirt for Women</h2>
+         <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+         </div>
+
+
+         <div>
+            <div class="single_product">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                     <img src="images/product_detail_01.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                     <img src="images/product_detail_02.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                     <img src="images/product_detail_01.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                     <img src="images/product_detail_02.jpg" alt="">
+                  </div>
+               </div>
+               <div class="swiper-pagination"></div>
+            </div>
+         </div>
+
+         <div class="details_info">
+            <h3>$21.99</h3>
+            <p>Look stunning with this modern t-shirt. Its comfortable and attractive.</p>
+            <form action="#">
+               <label for="color">colors</label>
+               <select name="color" id="color">
+                  <option value="">colors</option>
+                  <option value="blue">blue</option>
+                  <option value="red">red</option>
+                  <option value="silber">silver</option>
+               </select>
+
+               <label for="size">size</label>
+               <select name="size" id="size">
+                  <option value="">size</option>
+                  <option value="XL">XL</option>
+                  <option value="L">L</option>
+                  <option value="M">M</option>
+                  <option value="S">S</option>
+                  <option value="XS">XS</option>
+               </select>
+               <input type="submit" value="Add to Cart" class="btn">
+            </form>
+         </div>
+      </main>
+   </div>
+
+
+
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script>
+      const swiper = new Swiper('.single_product', {
+         // Optional parameters
+         //direction: 'vertical',
+         slidesPerView: 1.2,
+         spaceBetween: 25,
+         loop: true,
+
+         // If we need pagination
+         pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+         },
+
+
+      });
+   </script>
+</body>
+
+</html>

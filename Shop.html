@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Shop</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"> <!-- 슬릭 -->
+
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+   <!-- 폰트어썸 -->
+</head>
+
+<body>
+   <div class="shop">
+      <header>
+         <img src="images/menu_Icon_left.svg" alt="menu_Icon_left" class="menu_Icon_left">
+         <h2>Shop</h2>
+         <img src="images/menu_Icon_right.svg" alt="menu_Icon_right" class="menu_Icon_right">
+      </header> <!-- /header -->
+
+      <div class="Top_Product">
+         <img src="images/top_product_img.jpg" alt="top_product" class="top_product">
+         <div class="info">
+            <h2>T-shirt for Women</h2>
+            <div class="desc">
+               <div class="price">$121.00</div>
+               <div class="rate">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+               </div>
+            </div>
+         </div> <!-- /info -->
+      </div><!-- /Top_Product -->
+
+      <div class="shop_product">
+         <div class="product_list clearfix">
+            <div class="slide">
+               <img src="images/shop_list_01_watch.jpg" alt="watch">
+               <h3>Wrist Watch</h3>
+               <h4>$34.99</h4>
+            </div>
+            <div class="slide">
+               <img src="images/shop_list_02_shoes.jpg" alt="shoes">
+               <h3>Wrist Watch</h3>
+               <h4>$127.99</h4>
+            </div>
+            <div class="slide">
+               <img src="images/shop_list_03_shirts.jpg" alt="shirts">
+               <h3>Wrist Watch</h3>
+               <h4>$54.99</h4>
+            </div>
+            <div class="slide">
+               <img src="images/shop_list_01_watch.jpg" alt="watch">
+               <h3>Wrist Watch</h3>
+               <h4>$34.99</h4>
+            </div>
+            <div class="slide">
+               <img src="images/shop_list_02_shoes.jpg" alt="shoes">
+               <h3>Wrist Watch</h3>
+               <h4>$127.99</h4>
+            </div>
+            <div class="slide">
+               <img src="images/shop_list_03_shirts.jpg" alt="shirts">
+               <h3>Wrist Watch</h3>
+               <h4>$54.99</h4>
+            </div>
+         </div>
+      </div><!-- shop_product -->
+   </div>
+
+
+   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> <!-- 슬릭js -->
+   <script>
+      $('.product_list').slick({
+         arrows: false,
+         slidesToShow: 4,
+         slidesToScroll: 4,
+         infinite: true,
+         responsive: [{
+               breakpoint: 760,
+               settings: {
+                  slidesToShow: 4,
+                  slidesToScroll: 4,
+                  infinite: true,
+               }
+            },
+            {
+               breakpoint: 376,
+               settings: {
+                  slidesToShow: 2.1,
+                  slidesToScroll: 2
+               }
+            },
+         ]
+
+      });
+   </script>
+</body>
+
+</html>
