@@ -15,6 +15,7 @@ cmd 창을연다
 를 입력했을때 버전이 나오면 설치완료.
 ![image](https://github.com/manbock/node.js/assets/145514177/b2381b24-f601-47b7-b117-9db377c1e55b)
 
+
 * node.js를 설치하면 npm이 자동으로 설치됨
 * npx는 npm이 설치될때 함께 설치가된다.
 * npm --> 외부 라이브러리를 쉽게 설치하고 버전을 관리 해준다. --> package.json를 만들게 된다.
