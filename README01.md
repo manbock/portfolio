@@ -12,8 +12,8 @@ cmd 창을연다
   ```
   node -v
   ```
-를 입력했을때 버전이 나오면 설치완료.
 ![image](https://github.com/manbock/node.js/assets/145514177/b2381b24-f601-47b7-b117-9db377c1e55b)
+를 입력했을때 버전이 나오면 설치완료.
 
 
 * node.js를 설치하면 npm이 자동으로 설치됨
