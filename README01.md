@@ -3,3 +3,16 @@
 * Node.js가 제공하는것이 npm(Node Package Manager)
 * npm이란 node.js로 만들어진 필요한 모듈을 다운받고 관리해줌. 다른 개발자가 만들어둔 유용한 nodejs로 만들어진 툴로 가져다 쓸 수 있음
 * npm을 이용한 유용한 라이브러리를 다운받을 예정("개발은 가져다쓰는게 절반이다")
+
+cmd 창을연다
+
+* node.js 사이트에서 설치파일을 다운받고 설치한다.
+* cmd 창에서
+
+  ```
+  node -v
+  ```
+  를 입력했을때 버전이 나오면 설치완료.
+![image](https://github.com/manbock/node.js/assets/145514177/b2381b24-f601-47b7-b117-9db377c1e55b)
+
+node.js를 설치하면 npm이 자동으로 설치됨
