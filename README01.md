@@ -36,4 +36,11 @@ npm start // 폴더안에 소스 실행
 
 
 
+# react 확장프로그램
+- react 기본구조를 만들어주는 확장프로그램
+![image](https://github.com/manbock/node.js/assets/145514177/94527252-4b22-4907-932d-8e2b5028d69d)
+- react 코드를 정렬해주는 확장프로그램
+![image](https://github.com/manbock/node.js/assets/145514177/4605c929-9407-45b2-a544-9f514c81d786)
+
+
 
