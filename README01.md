@@ -42,5 +42,14 @@ npm start // 폴더안에 소스 실행
 - react 코드를 정렬해주는 확장프로그램
 ![image](https://github.com/manbock/node.js/assets/145514177/4605c929-9407-45b2-a544-9f514c81d786)
 
+# format save 설정하기
+
+
+![image](https://github.com/manbock/node.js/assets/145514177/340658b1-c6da-4cdd-8734-c954fae84c71)
+
+
+-기본 포매터를 Prettier로 하고, format on save 체크
+![image](https://github.com/manbock/node.js/assets/145514177/8b89950e-7593-4c99-a3a9-aea6b2db49ed)
+
 
 
