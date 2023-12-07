@@ -1,7 +1,7 @@
 
 #  JSX문법
 
-참조)  https://react.dev/learn
+https://react.dev/learn
 
 - 컴퍼넌트의 return()에서는 반드시 하나의 태그로 둘러싸여 있어야한다 (태그 한덩이만 있어야함)
 - 태그대신 <> </>   --> Fragment를 사용할 수 있다.
@@ -11,9 +11,24 @@
 
 
 
-
-
+     
 ## 🎃인라인스타일로 css를 작성할때
 - 밖의 {}  -> 스크립트를 사용한다는 의미
 - 안의 {}  -> 객체를 사용한다는 의미
 - <div style={{width:"300px",height:"200px"}}>추가하기</div>
+
+```
+import "./App.css";
+
+function App() {
+  const name = "댕댕이";
+  return (
+    <>
+      <div className="App">
+        <p>{name}시작하기</p>
+      </div>
+      <div style={{ width: "300px", height: "200px" }}>추가하기</div>
+    </>
+  );
+}
+```
