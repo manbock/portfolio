@@ -9,7 +9,7 @@ https://react.dev/learn
 - javaScript 코드를 JSX 문법에서 사용할때는 {쓸내용} 형식으로 사용해야한다.(안쓰면 문자로 출력됨)
 - ![image](https://github.com/manbock/node.js/assets/145514177/b4764c3e-f3c3-42ae-a52e-1e004e67281a)
 
-* 🎃인라인스타일로 css를 작성할때
+## 🎃인라인스타일로 css를 작성할때
 - 밖의 {}  -> 스크립트를 사용한다는 의미
 - 안의 {}  -> 객체를 사용한다는 의미
 - <div style={{width:"300px",height:"200px"}}>추가하기</div>
