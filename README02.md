@@ -32,3 +32,38 @@ function App() {
   );
 }
 ```
+
+```
+import "./App.css";
+
+function App() {
+  const name = "댕댕이";
+  const list = ["기침", "감기", "약"];
+  return (
+    <>
+      <h1 className="dog">{name}주제에 나보다 팔자가 좋구나</h1>
+      <h1 className="dog">{`${name}주제에 나보다 팔자가 좋구나`}</h1>
+      <ul>
+        <li>기침</li>
+        <li>감기</li>
+        <li>약</li>
+      </ul>
+      <ul>
+        {/*{list.map((item) => {
+          return <li>{item}</li>;
+        })} */}
+        {list.map((item) => (
+          <li>{item}</li>
+        ))}
+      </ul>
+      <img
+        style={{ width: "300px", height: "300px" }}
+        src="https://mblogthumb-phinf.pstatic.net/MjAxODA2MTlfNzMg/MDAxNTI5Mzc2MTA1MjUw.u0AuI2S98eAwaT2U43VcA7xT-NP4zf0CzL2qiTvg8Nog.bLqtNdyv5WQMfilqzgt0saG3dhhBUS_S8Hh6LVMXTiog.PNG.jsrwnmejs/20180619113123.png?type=w420"
+        alt="img"
+      ></img>
+    </>
+  );
+}
+
+export default App;
+```
