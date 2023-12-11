@@ -19,3 +19,8 @@
 
 
 ![image](https://github.com/manbock/node.js/assets/145514177/771b08a7-a110-4ce3-8cbf-80aeb0e091be)
+
+
+
+# 또다른 예시
+![image](https://github.com/manbock/node.js/assets/145514177/2a34b7c8-d917-44e3-a2df-73ab71dcd4e2)
