@@ -6,4 +6,4 @@ const[num, setNum] = useState(0)
 num = 변수처럼 사용되는 값
 setNum = num 을 제어하는 함수
 0 = num의 값
-```
+``` 
