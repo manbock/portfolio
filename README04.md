@@ -7,3 +7,4 @@ num = 변수처럼 사용되는 값
 setNum = num 을 제어하는 함수
 0 = num의 값
 ``` 
+![image](https://github.com/manbock/node.js/assets/145514177/2bd14bd5-1f70-4664-971f-630f1d990f6d)
