@@ -47,6 +47,7 @@ export default Profile
 
 
 ```
+//폴더 src2를 참조하세요.
 import { useState } from 'react';
 import './App.css';
 import Profile from './components/Profile';
