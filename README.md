@@ -24,5 +24,19 @@
 
 ![image](https://github.com/manbock/regiex/assets/145514177/f372a942-2734-4d5c-9149-d6e0be4ad3fe)
 
-# S로 시작하고 중간글자가 av 또는 har 가 들어가고 e로 끝나는것을 찾음
+# S로 시작하고 중간글자가 av 또는 har 가 들어가고 e로 끝나는것을 찾음 
 ![image](https://github.com/manbock/regiex/assets/145514177/fc7b6721-45d8-43d4-a11b-59003662a1f8)
+
+#찾아지기는 하지만 그룹으로 만들고 싶지 않다면 사용 
+![image](https://github.com/manbock/regiex/assets/145514177/da961d14-5c59-42be-9082-30fceec424aa)
+
+
+
+# gr로 시작하고 a또는e또는d가 포함되고 y로 끝남
+# [aed] --> 대괄호 안에 글자중 하나라도 만족하는것을 찾으라는 의미
+![image](https://github.com/manbock/regiex/assets/145514177/07c7bc86-b46b-42b0-9226-6ac318477399)
+
+![image](https://github.com/manbock/regiex/assets/145514177/0084dace-e2d1-4cbe-8322-139e4cd867f1)
+![image](https://github.com/manbock/regiex/assets/145514177/026ffff1-08ab-4212-968b-23a223bb6146)
+
+
