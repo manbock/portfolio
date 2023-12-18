@@ -4,7 +4,7 @@
 
 #1) 설치하기 -- npm install react-router-dom
 
-* index.js 의 App을 <BrowserRouter>로 싸줘야함
+* index.js 의 App을 BrowserRouter로 싸줘야함
 ![image](https://github.com/manbock/node.js/assets/145514177/35c9c366-25fd-4768-bfaa-4fc48c0687b0)
 
 
