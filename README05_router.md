@@ -5,7 +5,8 @@
 #1) 설치하기 -- npm install react-router-dom
 
 * 라우터를 임포트하고 index.js 의 App을 BrowserRouter태그로 싸줘야함
-![image](https://github.com/manbock/node.js/assets/145514177/35c9c366-25fd-4768-bfaa-4fc48c0687b0)
+![image](https://github.com/manbock/node.js/assets/145514177/d88a2219-50c8-43bf-95ab-75bc845a474f)
+
 
 
 
