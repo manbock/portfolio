@@ -36,7 +36,11 @@
 # [aed] --> 대괄호 안에 글자중 하나라도 만족하는것을 찾으라는 의미
 ![image](https://github.com/manbock/regiex/assets/145514177/07c7bc86-b46b-42b0-9226-6ac318477399)
 
+```
+아래 두 정규식은 같은의미이다
+```
 ![image](https://github.com/manbock/regiex/assets/145514177/0084dace-e2d1-4cbe-8322-139e4cd867f1)
-![image](https://github.com/manbock/regiex/assets/145514177/026ffff1-08ab-4212-968b-23a223bb6146)
+![image](https://github.com/manbock/regiex/assets/145514177/1065c432-dd87-46cf-887b-71f175f27b1c)
+
 
 
