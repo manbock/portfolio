@@ -18,5 +18,11 @@
   - ()  : 그룹
   - []  : 문자셋, 괄호안의 어떤 문자든
   - [^] : 부정 문자셋, 괄호안의 문자 제외할때
-  - (?) : 찾지만 기억하지는 않음
-  -  
+  - (?:) : 찾지만 기억하지는 않음
+
+![image](https://github.com/manbock/regiex/assets/145514177/a6410391-56d8-4431-9fb7-ee9cf0c36e0d)
+
+![image](https://github.com/manbock/regiex/assets/145514177/f372a942-2734-4d5c-9149-d6e0be4ad3fe)
+
+# S로 시작하고 중간글자가 av 또는 har 가 들어가고 e로 끝나는것을 찾음
+![image](https://github.com/manbock/regiex/assets/145514177/fc7b6721-45d8-43d4-a11b-59003662a1f8)
