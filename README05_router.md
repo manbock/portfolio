@@ -9,7 +9,7 @@
 
 
 
-*App.js 에서 사용할때 루트들은  Routes태그 안에 작성해야한다.
+* App.js 에서 사용할때 루트들은  Routes태그 안에 작성해야한다.
 ![image](https://github.com/manbock/node.js/assets/145514177/be8d409e-6a1d-4a8b-9c50-b0ee7853ce7c)
 
 
