@@ -12,3 +12,7 @@
 
 
 ## useEffect(()=>{},[products, count]) ==> products와 count중에서 하나라도 값이 바뀔때마다 useEffect가 실행됨(component가 실행될때 처음 한번 실행된 후.)
+
+
+## useEffect() 가 종료되는 시점에 데이터가 변경된다.
+![image](https://github.com/manbock/node.js/assets/145514177/36b5a87f-b864-4ceb-945c-e0c3786aac82)
