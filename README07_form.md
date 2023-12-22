@@ -17,3 +17,28 @@ onChange={(e)=>{setName(e,target,value)}}
  <form onSubmit={(e)=>{e.preventDefault()}}>
 ```
 ![image](https://github.com/manbock/node.js/assets/145514177/d7bb07bc-a9f8-4b5c-9084-4bb77b44bed8)
+
+```
+import { useState } from 'react';
+import './App.css';
+
+function App() {
+const [name,setName]=useState("")
+  
+  return (
+    <div className='counter'>
+      <form onSubmit={(e)=>{e.preventDefault()}}>
+        <label htmlFor="name">이름</label>
+        <input type="text" id='name' name='name' value={name} 
+        onChange={(e)=>{
+          console.log(e.target.value)
+          setName(e.target.value)
+        }}/>
+        <button>submit</button>
+      </form>
+    </div>
+  );
+}
+
+export default App;
+```
