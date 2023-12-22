@@ -18,7 +18,7 @@ onChange={(e)=>{setName(e,target,value)}}
 ```
 ![image](https://github.com/manbock/node.js/assets/145514177/d7bb07bc-a9f8-4b5c-9084-4bb77b44bed8)
 
-```jsx
+```js
 import { useState } from 'react';
 import './App.css';
 
