@@ -18,4 +18,10 @@ npm i --save @fortawesome/free-brands-svg-icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { 사용할아이콘 } from '@fortawesome/free-solid-svg-icons' //솔리드
 import { 사용할아이콘 } from '@fortawesome/free-regular-svg-icons' //레귤러
+
+ return (
+   <>
+      <FontAwesomeIcon icon={faUser} />
+   </>
+  )
 ```
