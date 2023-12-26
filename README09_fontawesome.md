@@ -21,7 +21,7 @@ import { 사용할아이콘 } from '@fortawesome/free-regular-svg-icons' //레�
 
  return (
    <>
-      <FontAwesomeIcon icon={faUser} />
+      <FontAwesomeIcon icon={ 사용할아이콘 } />
    </>
   )
 ```
