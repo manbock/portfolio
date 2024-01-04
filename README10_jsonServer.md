@@ -23,7 +23,7 @@ npm install -g json-server
 }
 ```
 
-json서버 실행 --> 기본적으로 3000번에서 시작하는데
+json서버 실행 --> 기본적으로 3000번에서 시작하는데 react가 3000번이니까 3004로 바꿔줌
 ```
-json-server --watch db.json --port 3004
+npx json-server --watch db.json --port 3004 
 ```
