@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .wrap{/* overflow: hidden; */ container: content;}
+    .main{height: 300vh; background-color: mistyrose;}
+    .sticky{
+      width: 200px; 
+      position: sticky; top: 0;
+      /* ⭐position: sticky는 부모들 중에 어느 누구도 overflow:hidden;이 있으면 sticky적용이 안됨! 
+         ⭐sticky의 자식이나 부모형제는 ok!  */
+    }
+    .sticky img{width: 100%;}
+  </style>
+</head>
+<body>
+  <section class="top" style="height: 100vh; background-color: #ccc;"></section>
+  
+  <div class="wrap">
+    <section class="main">
+      <div class="sticky">
+        <img src="https://i.namu.wiki/i/dduA09ASxeRURd6pORBnR8xpQYMROpSTwpTiqb6dn_Qmd74k-1pJtHL0JgCCUGm8wBJ-pkBprPqDOb4v2tNSuw.webp" alt="">
+      </div>
+    </section>
+  </div>
+ 
+  <section class="bottom" style="height: 100vh; background-color: #ccc;"></section>
+</body>
+</html>
