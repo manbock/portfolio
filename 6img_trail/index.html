@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="top" style="height: 100vh; background-color: #ccc;"></div>
+
+   <div class="main">
+      <h2>Image-Trail</h2>
+      <div class="img img-1"></div>
+      <div class="img img-2"></div>
+      <div class="img img-3"></div>
+      <div class="img img-4"></div>
+      <div class="img img-5"></div>
+   </div>
+
+   <div class="bottom" style="height: 100vh; background-color: #ccc;"></div>
+
+   <script>
+
+      let main=document.querySelector('.main'),
+         img1=document.querySelector('.img-1'), //요소자체
+          img2=document.querySelector('.img-2'),
+          img3=document.querySelector('.img-3'),
+          img4=document.querySelector('.img-4'),
+          img5=document.querySelector('.img-5');
+      //쿼리셀렉터,겟엘리먼트 차이🎃
+      //let img=document.getElementsByClassName('img'); //배열
+      //let picture=document.querySelectorAll('.img') //배열
+      //console.log(picture)
+      
+
+      document.addEventListener('mousemove',function(e){
+         console.log(e.clientX) //화면을 기준으로 왼쪽끝에서부터 0~
+         console.log(e.clientY) //화면을 기준으로 위쪽끝에서부터 0~
+
+        /*  main.setAttribute('style','top:'+(e.offsetY - 250)+'px;left:'+(e.clientX - 200)+'px;')  💥개조중*/
+         img1.setAttribute('style','top:'+(e.clientY - 250)+'px;left:'+(e.clientX - 200)+'px;')
+         img2.setAttribute('style','top:'+(e.clientY - 250)+'px;left:'+(e.clientX - 200)+'px;')
+         img3.setAttribute('style','top:'+(e.clientY - 250)+'px;left:'+(e.clientX - 200)+'px;')
+         img4.setAttribute('style','top:'+(e.clientY - 250)+'px;left:'+(e.clientX - 200)+'px;')
+         img5.setAttribute('style','top:'+(e.clientY - 250)+'px;left:'+(e.clientX - 200)+'px;')
+      })
+   </script>
+</body>
+</html>

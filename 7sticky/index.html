@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+      <h2>Scroll Down</h2>
+      <p>Scroll down to see the sticky effect.</p>
+   </header>
+
+   <nav id="navbar">
+      <a href="javascript:void(0)" class="active">Home</a>
+      <a href="javascript:void(0)" >News</a>
+      <a href="javascript:void(0)" >Contact</a>
+   </nav>
+
+   <div class="content">
+      <h3>Lorem, ipsum dolor.</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, vel!</p>
+      <p>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima corrupti sit, rem minus, nobis aliquam soluta voluptas repudiandae delectus at facere magni? Dolore repudiandae ab magnam corporis natus reiciendis, earum deleniti et ut quisquam rerum obcaecati iste quibusdam sit deserunt. Tenetur est cupiditate ex iste illum fugit ratione, omnis facere!
+      </p>
+      <p>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima corrupti sit, rem minus, nobis aliquam soluta voluptas repudiandae delectus at facere magni? Dolore repudiandae ab magnam corporis natus reiciendis, earum deleniti et ut quisquam rerum obcaecati iste quibusdam sit deserunt. Tenetur est cupiditate ex iste illum fugit ratione, omnis facere!
+      </p>
+      <p>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima corrupti sit, rem minus, nobis aliquam soluta voluptas repudiandae delectus at facere magni? Dolore repudiandae ab magnam corporis natus reiciendis, earum deleniti et ut quisquam rerum obcaecati iste quibusdam sit deserunt. Tenetur est cupiditate ex iste illum fugit ratione, omnis facere!
+      </p>
+      <p>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima corrupti sit, rem minus, nobis aliquam soluta voluptas repudiandae delectus at facere magni? Dolore repudiandae ab magnam corporis natus reiciendis, earum deleniti et ut quisquam rerum obcaecati iste quibusdam sit deserunt. Tenetur est cupiditate ex iste illum fugit ratione, omnis facere!
+      </p>
+      <p>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima corrupti sit, rem minus, nobis aliquam soluta voluptas repudiandae delectus at facere magni? Dolore repudiandae ab magnam corporis natus reiciendis, earum deleniti et ut quisquam rerum obcaecati iste quibusdam sit deserunt. Tenetur est cupiditate ex iste illum fugit ratione, omnis facere!
+      </p>
+      <p>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima corrupti sit, rem minus, nobis aliquam soluta voluptas repudiandae delectus at facere magni? Dolore repudiandae ab magnam corporis natus reiciendis, earum deleniti et ut quisquam rerum obcaecati iste quibusdam sit deserunt. Tenetur est cupiditate ex iste illum fugit ratione, omnis facere!
+      </p>
+      <p>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima corrupti sit, rem minus, nobis aliquam soluta voluptas repudiandae delectus at facere magni? Dolore repudiandae ab magnam corporis natus reiciendis, earum deleniti et ut quisquam rerum obcaecati iste quibusdam sit deserunt. Tenetur est cupiditate ex iste illum fugit ratione, omnis facere!
+      </p>
+      <p>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima corrupti sit, rem minus, nobis aliquam soluta voluptas repudiandae delectus at facere magni? Dolore repudiandae ab magnam corporis natus reiciendis, earum deleniti et ut quisquam rerum obcaecati iste quibusdam sit deserunt. Tenetur est cupiditate ex iste illum fugit ratione, omnis facere!
+      </p>
+      <p>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima corrupti sit, rem minus, nobis aliquam soluta voluptas repudiandae delectus at facere magni? Dolore repudiandae ab magnam corporis natus reiciendis, earum deleniti et ut quisquam rerum obcaecati iste quibusdam sit deserunt. Tenetur est cupiditate ex iste illum fugit ratione, omnis facere!
+      </p>
+      <p>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima corrupti sit, rem minus, nobis aliquam soluta voluptas repudiandae delectus at facere magni? Dolore repudiandae ab magnam corporis natus reiciendis, earum deleniti et ut quisquam rerum obcaecati iste quibusdam sit deserunt. Tenetur est cupiditate ex iste illum fugit ratione, omnis facere!
+      </p>
+   </div>
+
+
+
+
+   <script>
+      
+      // window.addEventListener('scroll',function(){
+      //    myFunction();
+      // })
+
+      // 🎃↓이렇게 줄여 쓸 수 있다↓
+      //window.addEventListener('scroll',myFunction)
+
+      // window.onscroll=function(){
+      //    myFunction();
+      // }
+
+      // 🎃↓이렇게 줄여 쓸 수 있다↓
+      window.onscroll=myFunction
+
+      let navbar=document.getElementById('navbar')
+      //offset은 Document를 기준으로 하는 좌표를 구한다.
+      //position은 부모를 기준으로 하는 좌표를 구한다.
+
+      let sticky=navbar.offsetTop; //navbar의 위쪽끝과 문서 위쪽끝의 길이
+      console.log(sticky)
+
+
+
+      //🎃현재 스크롤의 높이값 확인하는법🎃
+
+      function myFunction(){
+         // console.log(window.scrollY)
+         console.log(window.pageYOffset)
+         if(window.pageYOffset>=sticky){
+            navbar.classList.add('sticky');
+         }else{
+            navbar.classList.remove('sticky');
+         }
+      }
+
+   </script>
+</body>
+</html>
