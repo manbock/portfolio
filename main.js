@@ -27,7 +27,7 @@ backColor.forEach((colorSection,i)=>{
     trigger:colorSection,
     start:'top 50%',
     end:'bottom 5%',
-    markers:true,
+    markers:false,
     onEnter:()=>gsap.to("#contents",{
       backgroundColor:colorSection.dataset.bgcolor
     }),
@@ -48,7 +48,7 @@ const horiz=gsap.to(horSection,{
     trigger:'.port_desc',
     start:'top 20%',
     end:'+=5000',   //애니가 시작되는 지점에서 5000px 떨어진 지점
-    markers:true,
+    markers:false,
     scrub:1.5, //관성 수치 높을수록 미끄러짐
     pin:true,
 
