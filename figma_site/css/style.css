@@ -1,0 +1,332 @@
+@charset "UTF-8";
+@import url(reset.css);
+@import url(common.css);
+
+/* ---------------header----------------- */
+
+header{background-color: #7e57c2;
+    height: 50px;
+    position: relative;
+}
+header img{position: absolute; top: 50%;
+    transform: translateY(-50%);
+}
+header .menu_Icon_left{
+    left: 25px;
+}
+header .menu_Icon_right{
+    right: 25px;
+}
+header h2{text-align: center;
+    color: #fff;
+    font-size: 17px;
+    line-height: 50px;
+}
+
+/* ---------------welcom----------------- */
+.welcome{
+    height: 100vh;
+    background: url(../images/welcome_bg.png) no-repeat center;
+    background-size: cover;
+    padding-top: 134px;
+    box-sizing: border-box;
+}
+.welcome h1{color: #fff;
+    font-size: 32px;
+    line-height: 52px;
+    margin-bottom: 127px;
+}
+.welcome p{
+    color: #fff;
+    font-size: 21px;
+    line-height: 34px;
+    margin-bottom: 114px;
+}
+.welcome .sign_links{}
+.welcome .sign_links a:first-child{
+    margin-bottom: 30px;
+}
+
+
+/* ------------------Sign In------------------ */
+.sign_In{height: 100vh;
+background: url(../images/sign_in_bg.jpg) no-repeat center;
+padding-top: 85px;
+box-sizing: border-box;
+}
+.sign_In form{}
+
+/*
+[attr] ==> 'attr'속성이 포함된 요소를 선택 
+[attr="val"] ==> 'attr'속성의 값이 정확하게 val인 요소를 선택
+[attr~='val'] ==> 'attr'속성의 값이 val이 포함되는 요소를 선택
+[attr^='val'] ==> 'attr'속성의 값이 val로 시작되는 요소를 선택
+[attr$='val'] ==> 'attr'속성의 값이 val로 끝나는 요소를 선택
+[attr*='val'] ==> 'attr'속성의 값이 val로 포함되는 요소를 선택
+[attr|='val'] ==> 'attr'속성의 값이 val이거나 val-로 시작되는 요소를 선택
+
+*/
+
+[class^="sign"] .main-tt{color: #fff;
+font-size: 32px;line-height: 52px;
+margin-bottom: 116px;
+}
+[class^="sign"] form label{display: none;}
+[class^="sign"] form input{
+    height: 50px; width: 100%;
+    border: none; 
+    background-color: rgba(238, 238, 238,0.4);
+    padding: 0 25px; box-sizing: border-box;
+    color: #fff; font-size: 16px;
+    
+}
+[class^="sign"] form input[type=password]{}
+[class^="sign"] form p:not(:last-child){ /* p태그중 막내제외 호출 */
+    margin-bottom: 25px;
+}
+
+
+[class^="sign"] form input::placeholder{
+    line-height: 50px;
+    color: #fff; font-size: 16px;
+    font-family: 'Poppins', serif;
+}
+
+[class^="sign"] .signin_links{
+    text-align: center;
+    margin-top: 20px;
+}
+[class^="sign"] .signin_links a{
+    display: block;
+    color: #fff;
+    font-size: 13px; line-height: 13px;
+    font-weight: lighter;
+}
+[class^="sign"] .signin_links a:first-child{margin-bottom: 25px;}
+
+
+
+/* ------------------signUp------------------ */
+.sign_up{
+    height: 100vh;
+    background:url(../images/sign_up_bg.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 92px;
+    box-sizing: border-box;
+}
+.sign_up h2.main-tt{margin-bottom: 60px;}
+.sign_up form{margin-top: 60px;}
+/* ------------------shop_categori------------------ */
+.Slideshow{position: relative;}
+.Slideshow div{}
+.Slideshow div img{width: 100%; height: 200px;}
+.Slideshow .slick-dots{
+    position: absolute;
+    left: 50%; bottom: 0;
+    transform: translateX(-50%);
+}
+
+.Slideshow .slick-dots li{
+    display: inline-block;
+    border: 3px solid #7e57c2;
+    box-sizing: border-box;
+    width: 13px;height: 13px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.Slideshow .slick-dots li:last-child{margin-right: 0;}
+
+.Slideshow .slick-dots li.slick-active{
+    background-color: #7e57c2;
+}
+
+.Slideshow .slick-dots li button{
+    visibility: hidden;
+}
+
+/* 카테고리 */
+.Categories{}
+.Categories ul{margin-left: 25px; margin-top: 25px;}
+.Categories ul li{float: left;
+    width: 150px; margin-bottom: 25px;
+}
+.Categories ul li:nth-child(1),
+.Categories ul li:nth-child(3){margin-right: 25px;}
+.Categories ul li img{width: 100%; display: block; margin-bottom: 15px;}
+.Categories ul li h3{
+    font-size: 18px;
+    line-height: 25px;
+    color: #757575;
+}
+.Categories ul li h2{
+    color: #757575;
+}
+
+
+/* ------------------shop------------------ */
+
+.Top_Product{
+    position: relative;
+    padding: 25px 25px 0 0;
+}
+.Top_Product img{width: 100%;}
+
+.Top_Produc .info{
+    position: absolute;
+    left: 50px; right: 0; bottom: -37px;
+    background-color: #fff;
+    padding: 10px 30px 10px 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0,.25);
+}
+.Top_Produc .info h2{color: #757575;
+    line-height: 29px;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.Top_Produc .info .desc{}
+.Top_Produc .info .desc .price{
+    color: #7e57c2;
+}
+.Top_Produc .info .desc .rate{
+    position: absolute;
+    right: 30px; bottom: 10px;
+}
+.Top_Produc .info .desc .rate i{
+    color: #7e57c2;
+}
+
+.shop_product{
+    padding: 67px 0 0 25px;
+    overflow: hidden;
+}
+.shop_product .product_list{}
+.shop_product .product_list .slide{
+    padding-right: 25px;
+}
+.shop_product .product_list .slide img{width: 100%;
+    margin-bottom: 15px;
+}
+
+.shop_product .product_list .slick-track{padding-left: 17px;}
+
+.shop_product .product_list .slide h3{
+    color: #757575;
+    line-height: 25px;
+    font-size: 15px;
+    margin-bottom: 5px;
+} 
+.shop_product .product_list .slide h4{
+    font-size: 13px;
+    line-height: 21px;
+    color: #7e57c2;
+}
+
+
+
+/* ----------------<🎃Single Product🎃  >---------------- */
+
+
+.singleProduct main{padding-top: 25px; position: relative;
+    padding: 25px;}
+.singleProduct main h2{
+    font-size: 18px;
+    line-height: 29px;
+    color: #757575;
+    padding-bottom: 33px;
+    line-height: 29px;}
+.singleProduct main .rate{left: 25px; top: 54px;
+    color: #7e57c2; position: absolute;}
+.singleProduct main .rate i{
+    
+}
+
+.single_product{position: relative;}
+.single_product img{width: 100%;}
+.single_product .swiper-pagination{
+     bottom: -23px; 
+}
+/* swiper-pagination는 가져온거라서 개발자모드에서 기본값 확인 가능함 */
+
+.single_product .swiper-pagination .swiper-pagination-bullet{
+    width: 15px; height: 15px;
+    border: none;
+    border: 1px solid #7e57c2;
+    background: none;
+    opacity: 1;
+}
+
+.single_product .swiper-pagination .swiper-pagination-bullet-active{
+    background-color: #7e57c2;
+}
+
+.single_product .swiper-slide{height: 80vw;}
+@media(min-width:760px){
+    .single_product .swiper-slide{height: auto;}
+}
+
+.singleProduct .details_info{margin-top: 23px;}
+.singleProduct .details_info h3{
+    font-size: 26px; line-height: 26px;
+    color: #757575;
+    margin-bottom: 10px;
+}
+.singleProduct .details_info p{font-size: 13px;
+color: #757575; line-height: 21px;
+}
+@media(min-width:760px){
+    .singleProduct .details_info p{
+        line-height: 1.6vw;
+        font-size: 1.5vw;
+    }
+}
+.singleProduct .details_info form label{
+    display: none;
+}
+.singleProduct .details_info form{margin-top: 20px;}
+.singleProduct .details_info form select{
+    width: 100px; height: 23px;
+    font-size: 10px; line-height: 23px;
+    color: #757575;
+    border: 1px solid #999;
+    margin-right: 23px;
+}
+
+/* Shopping Cart */
+.ShoppingCart{padding: 30px 25px;color: #757575;}
+.cart_list{}
+.cart_list li{display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+}
+.cart_list li img{width: 40px;height: 40px;}
+.cart_list li .cart_list_info{
+    margin-left: 10px; flex: 1;
+    
+}
+.cart_list li .cart_list_info h3{font-size: 15px; line-height: 20px;}
+.cart_list li .cart_list_info p{font-size: 10px; line-height: 16px;}
+.cart_list li .del_icon{}
+.cart_list li .del_icon i{}
+
+
+.cart_price{margin-bottom: 62px;}
+.cart_price li{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 15px;line-height: 25px;
+    margin-bottom: 8px;
+}
+.cart_price li:last-child{font-size: 18px;}
+.cart_price li:last-child p{color: #7E57C2}
+.cart_price li h5{}
+.cart_price li p{
+    width: 60px;
+    text-align: right;
+    margin-left: 30px;
+}
+
+.payment{}
+.payment .btn{}

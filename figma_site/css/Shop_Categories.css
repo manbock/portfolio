@@ -1,0 +1,70 @@
+@charset "UTF-8";
+@import url(common.css);
+
+
+
+/* !header */
+header{background-color: #7e57c2;
+    height: 50px;
+    position: relative;
+}
+header img{position: absolute; top: 50%;
+    transform: translateY(-50%);
+}
+header .menu_Icon_left{
+    left: 25px;
+}
+header .menu_Icon_right{
+    right: 25px;
+}
+header h2{text-align: center;
+    color: #fff;
+    font-size: 17px;
+    line-height: 50px;
+}
+
+.Slideshow{position: relative;}
+.Slideshow div{}
+.Slideshow div img{width: 100%; height: 200px;}
+.Slideshow .slick-dots{
+    position: absolute;
+    left: 50%; bottom: 0;
+    transform: translateX(-50%);
+}
+
+.Slideshow .slick-dots li{
+    display: inline-block;
+    border: 3px solid #7e57c2;
+    box-sizing: border-box;
+    width: 13px;height: 13px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.Slideshow .slick-dots li:last-child{margin-right: 0;}
+
+.Slideshow .slick-dots li.slick-active{
+    background-color: #7e57c2;
+}
+
+.Slideshow .slick-dots li button{
+    visibility: hidden;
+}
+
+/* 카테고리 */
+.Categories{}
+.Categories ul{margin-left: 25px; margin-top: 25px;}
+.Categories ul li{float: left;
+    width: 150px; margin-bottom: 25px;
+}
+.Categories ul li:nth-child(1),
+.Categories ul li:nth-child(3){margin-right: 25px;}
+.Categories ul li img{width: 100%; display: block; margin-bottom: 15px;}
+.Categories ul li h3{
+    font-size: 18px;
+    line-height: 25px;
+    color: #757575;
+}
+.Categories ul li h2{
+    color: #757575;
+}
+
