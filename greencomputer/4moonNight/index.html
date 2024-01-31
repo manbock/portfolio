@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section>
+        <img src="img/bg.jpg" alt="bg" id="bg">
+        <img src="img/moon.png" alt="moon" id="moon">
+        <img src="img/mountain.png" alt="mountain" id="mountain">
+        <img src="img/road.png" alt="road" id="road">
+        <h2 class="text" id="text">Moon Night</h2>
+    </section>
+    <section class="content">
+        <h3>Parallax Background Scrolling</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, dolore? Recusandae veniam necessitatibus non commodi sequi repudiandae, magni maxime? In ullam officia dignissimos blanditiis accusantium quam, aut repellendus consectetur culpa, sunt sed unde harum modi optio provident cumque voluptatum, ipsam animi fugiat amet incidunt alias necessitatibus deserunt! Unde deleniti similique nostrum perferendis, nesciunt officiis, doloribus fuga incidunt voluptates quas excepturi vitae ipsum deserunt adipisci voluptatem non provident, officia placeat minus et earum. Maiores, voluptates! Vel nulla nesciunt quae corrupti. Soluta libero, pariatur molestias rem odit architecto iste perspiciatis mollitia fugit! Commodi distinctio, error maiores repellat doloremque explicabo ea non ut.</p>
+    </section>
+
+    <!-- !script -->
+    <script>
+//  let bg = document.getElementById('bg');
+    let bg = document.querySelector('#bg');
+    let moon = document.querySelector('#moon');
+    let mountain = document.querySelector('#mountain');
+    let road = document.querySelector('#road');
+    let text = document.querySelector('#text');
+
+//  scroll은 window의 이벤트다.
+    window.addEventListener('scroll',function(){
+        let value = window.scrollY;
+        console.log(value)
+
+        moon.style.left = -value*0.2  +'px';
+        moon.style.top = value*0.35 + 'px';
+
+        bg.style.top=value*0.2+'px';
+        mountain.style.top=-value*0.15+'px';
+        road.style.top=value*0.15+'px';
+        text.style.top=value+'px';
+    })
+    </script> 
+</body>
+</html>

@@ -1,0 +1,26 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&display=swap');
+
+#main{
+   font-family: 'Merriweather', serif;
+   background-color: #222;
+}
+
+/* -----------------🎃part-2------------------- */
+.part-2{
+   width: 100%; height: 100vh; 
+}
+.part-2 h1{
+   color: #fff; font-size: 12vw; display: flex;
+   line-height: 24vh;
+}
+.part-2 h1 span{
+   color: transparent;
+   -webkit-text-stroke: 1px #fff;
+}
+.strip{width: 300%;}
+.strip:nth-child(2n){
+   margin-left: -50%;
+}

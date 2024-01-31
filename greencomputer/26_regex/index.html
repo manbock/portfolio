@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <div class="one"></div>
+   <div class="two"></div>
+   <script>
+      let A="즐거운 하루 되세요~";
+      let B="즐거운";
+      let C= A.match(B)
+      console.log(C[0])
+
+      document.querySelector('.one').innerHTML=C[0]
+
+      let url="https://youtu.be/OzVfxafNCZg";
+      //  /(https?)/ --> s가 있어도 되고 없어도 됨
+      let reg= /(?:https?:\/\/)?(?:www\.)?youtu\.be\/([a-zA-Z0-9]){11}/;
+      console.log(url.match(reg))
+
+      let result=url.match(reg)
+
+      document.querySelector('.two').innerHTML=result[1]
+   </script>
+</body>
+</html>
